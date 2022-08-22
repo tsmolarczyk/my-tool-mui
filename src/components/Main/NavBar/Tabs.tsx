@@ -46,8 +46,9 @@ export const MyTabs = () => {
 
   return (
     <Box>
-      <Box>
+      <Box fontSize="30rem">
         <Tabs
+          sx={{ background: 'yellow', fontSize: '50rem' }}
           value={value}
           onChange={handleChange}
           aria-label="basic tabs example"
@@ -55,11 +56,15 @@ export const MyTabs = () => {
           variant="fullWidth"
           centered
           textColor="secondary"
-          TabIndicatorProps={{ style: { background: 'green' } }}
+          TabIndicatorProps={{
+            style: {
+              background: 'green',
+            },
+          }}
         >
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
+          <Tab sx={{ fontSize: '2rem' }} label="Item One" {...a11yProps(0)} />
+          <Tab sx={{ fontSize: '2rem' }} label="Item Two" {...a11yProps(1)} />
+          <Tab sx={{ fontSize: '2rem' }} label="Item Three" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
