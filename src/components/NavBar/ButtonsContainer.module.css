@@ -1,0 +1,15 @@
+.btnscontainer {
+    display: flex;
+    width: 100%;
+    background-color: blue;
+}
+
+.btn {
+    height: 8rem;
+    flex: 1;
+    cursor: pointer;
+    border: none;
+}
+.btn:hover {
+    border-bottom: red 1px solid;
+}
