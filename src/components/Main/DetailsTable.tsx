@@ -59,9 +59,8 @@ export const DetailsTable = () => {
           size="large"
           component={Link}
           to={`/${page}`}
-          asdasdsadasd
         >
-          dfgdfg CLIK FOR MORE INFO
+          CLIK FOR MORE INFO
         </Button>
       </div>
       {useMemo(() => {
