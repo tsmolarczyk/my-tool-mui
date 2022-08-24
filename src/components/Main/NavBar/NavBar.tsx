@@ -15,6 +15,9 @@ const darkTheme = createTheme({
   palette: {
     mode: 'dark',
   },
+  typography: {
+    fontSize: 40,
+  },
 })
 
 export const NavBar = () => {
