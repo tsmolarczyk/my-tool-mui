@@ -61,7 +61,7 @@ export const DetailsTable = () => {
           to={`/${page}`}
           asdasdsadasd
         >
-          CLIK FOR MORE INFO
+          dfgdfg CLIK FOR MORE INFO
         </Button>
       </div>
       {useMemo(() => {
