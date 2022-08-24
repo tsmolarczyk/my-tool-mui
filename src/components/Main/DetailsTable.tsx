@@ -59,6 +59,7 @@ export const DetailsTable = () => {
           size="large"
           component={Link}
           to={`/${page}`}
+          asdasdsadasd
         >
           CLIK FOR MORE INFO
         </Button>
