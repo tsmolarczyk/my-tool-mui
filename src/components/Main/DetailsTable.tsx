@@ -23,7 +23,6 @@ export const DetailsTable = () => {
 
   useEffect(() => {
     getPostsTitles()
-    console.log(posts)
   }, [])
 
   return (

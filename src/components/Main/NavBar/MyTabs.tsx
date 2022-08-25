@@ -6,7 +6,6 @@ import Box from '@mui/material/Box'
 
 import { TableData } from '../TableData'
 import { DetailsTable } from '../DetailsTable'
-import { GridTable } from '../GridTable'
 
 interface TabPanelProps {
   children?: React.ReactNode

@@ -1,8 +1,6 @@
 import { useState, useEffect, useMemo } from 'react'
 
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid'
-import { css, makeStyles } from '@mui/material'
-import classNames from 'classnames'
 
 const columns: GridColDef[] = [
   { field: 'id', headerName: 'ID', width: 220 },
@@ -24,18 +22,6 @@ const columns: GridColDef[] = [
     valueGetter: (params: GridValueGetterParams) =>
       `${params.row.firstName || ''} ${params.row.lastName || ''}`,
   },
-]
-
-const rows = [
-  { userId: 1, id: 1, lastName: 'Snow', firstName: 'Jon', age: 35 },
-  { userId: 1, id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 42 },
-  { userId: 1, id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 45 },
-  { userId: 1, id: 4, lastName: 'Stark', firstName: 'Arya', age: 16 },
-  { userId: 1, id: 5, lastName: 'Targaryen', firstName: 'Daenerys', age: null },
-  { userId: 1, id: 6, lastName: 'Melisandre', firstName: null, age: 150 },
-  { userId: 1, id: 7, lastName: 'Clifford', firstName: 'Ferrara', age: 44 },
-  { userId: 1, id: 8, lastName: 'Frances', firstName: 'Rossini', age: 36 },
-  { userId: 1, id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
 ]
 
 export const TableData = () => {
