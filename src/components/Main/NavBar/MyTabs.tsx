@@ -5,7 +5,8 @@ import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 
 import { TableData } from '../TableData'
-import { DetailsTable } from '../DetailsTable'
+import { SecondPage } from '../SecondPage/SecondPage'
+import { ThirdPage } from '../ThirdPage/ThirdPage'
 
 interface TabPanelProps {
   children?: React.ReactNode
@@ -69,6 +70,7 @@ export const MyTabs = () => {
             label="Details TabLE"
             {...a11yProps(1)}
           />
+          <Tab sx={{ fontSize: '2rem' }} label="bLE" {...a11yProps(1)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
@@ -76,7 +78,11 @@ export const MyTabs = () => {
       </TabPanel>
       <TabPanel value={value} index={1}>
         {/* <GridTable /> */}
-        <DetailsTable />
+        {/* <DetailsTable /> */}
+        <SecondPage />
+      </TabPanel>
+      <TabPanel value={value} index={2}>
+        <ThirdPage />
       </TabPanel>
     </Box>
   )

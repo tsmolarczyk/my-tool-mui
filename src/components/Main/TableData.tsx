@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect } from 'react'
 
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid'
 
@@ -49,9 +49,6 @@ export const TableData = () => {
           style={{ fontSize: '10px', width: '100%' }}
         />
       </div>
-      {useMemo(() => {
-        console.log('123')
-      }, [])}
     </>
   )
 }
