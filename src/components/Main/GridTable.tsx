@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Grid,
   Card,
@@ -6,7 +6,7 @@ import {
   CardMedia,
   Typography,
   CardContent,
-} from "@mui/material";
+} from '@mui/material'
 
 export const GridTable = () => {
   return (
@@ -16,16 +16,16 @@ export const GridTable = () => {
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
               <CardMedia
-                component='img'
-                height='140'
-                image='https://mui.com/static/images/cards/contemplative-reptile.jpg'
-                alt='green iguana'
+                component="img"
+                height="140"
+                image="https://mui.com/static/images/cards/contemplative-reptile.jpg"
+                alt="green iguana"
               />
               <CardContent>
-                <Typography gutterBottom variant='h5' component='div'>
+                <Typography gutterBottom variant="h5" component="div">
                   Lizard
                 </Typography>
-                <Typography variant='body2' color='text.secondary'>
+                <Typography variant="body2" color="text.secondary">
                   Lizards are a widespread group of squamate reptiles, with over
                   6,000 species, ranging across all continents except Antarctica
                 </Typography>
@@ -37,16 +37,16 @@ export const GridTable = () => {
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
               <CardMedia
-                component='img'
-                height='140'
-                image='https://mui.com/static/images/cards/contemplative-reptile.jpg'
-                alt='green iguana'
+                component="img"
+                height="140"
+                image="https://mui.com/static/images/cards/contemplative-reptile.jpg"
+                alt="green iguana"
               />
               <CardContent>
-                <Typography gutterBottom variant='h5' component='div'>
+                <Typography gutterBottom variant="h5" component="div">
                   Lizard
                 </Typography>
-                <Typography variant='body2' color='text.secondary'>
+                <Typography variant="body2" color="text.secondary">
                   Lizards are a widespread group of squamate reptiles, with over
                   6,000 species, ranging across all continents except Antarctica
                 </Typography>
@@ -58,16 +58,16 @@ export const GridTable = () => {
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
               <CardMedia
-                component='img'
-                height='140'
-                image='https://mui.com/static/images/cards/contemplative-reptile.jpg'
-                alt='green iguana'
+                component="img"
+                height="140"
+                image="https://mui.com/static/images/cards/contemplative-reptile.jpg"
+                alt="green iguana"
               />
               <CardContent>
-                <Typography gutterBottom variant='h5' component='div'>
+                <Typography gutterBottom variant="h5" component="div">
                   Lizard
                 </Typography>
-                <Typography variant='body2' color='text.secondary'>
+                <Typography variant="body2" color="text.secondary">
                   Lizards are a widespread group of squamate reptiles, with over
                   6,000 species, ranging across all continents except Antarctica
                 </Typography>
@@ -79,16 +79,16 @@ export const GridTable = () => {
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
               <CardMedia
-                component='img'
-                height='140'
-                image='https://mui.com/static/images/cards/contemplative-reptile.jpg'
-                alt='green iguana'
+                component="img"
+                height="140"
+                image="https://mui.com/static/images/cards/contemplative-reptile.jpg"
+                alt="green iguana"
               />
               <CardContent>
-                <Typography gutterBottom variant='h5' component='div'>
+                <Typography gutterBottom variant="h5" component="div">
                   Lizard
                 </Typography>
-                <Typography variant='body2' color='text.secondary'>
+                <Typography variant="body2" color="text.secondary">
                   Lizards are a widespread group of squamate reptiles, with over
                   6,000 species, ranging across all continents except Antarctica
                 </Typography>
@@ -100,16 +100,16 @@ export const GridTable = () => {
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
               <CardMedia
-                component='img'
-                height='140'
-                image='https://mui.com/static/images/cards/contemplative-reptile.jpg'
-                alt='green iguana'
+                component="img"
+                height="140"
+                image="https://mui.com/static/images/cards/contemplative-reptile.jpg"
+                alt="green iguana"
               />
               <CardContent>
-                <Typography gutterBottom variant='h5' component='div'>
+                <Typography gutterBottom variant="h5" component="div">
                   Lizard
                 </Typography>
-                <Typography variant='body2' color='text.secondary'>
+                <Typography variant="body2" color="text.secondary">
                   Lizards are a widespread group of squamate reptiles, with over
                   6,000 species, ranging across all continents except Antarctica
                 </Typography>
@@ -121,16 +121,16 @@ export const GridTable = () => {
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
               <CardMedia
-                component='img'
-                height='140'
-                image='https://mui.com/static/images/cards/contemplative-reptile.jpg'
-                alt='green iguana'
+                component="img"
+                height="140"
+                image="https://mui.com/static/images/cards/contemplative-reptile.jpg"
+                alt="green iguana"
               />
               <CardContent>
-                <Typography gutterBottom variant='h5' component='div'>
+                <Typography gutterBottom variant="h5" component="div">
                   Lizard
                 </Typography>
-                <Typography variant='body2' color='text.secondary'>
+                <Typography variant="body2" color="text.secondary">
                   Lizards are a widespread group of squamate reptiles, with over
                   6,000 species, ranging across all continents except Antarctica
                 </Typography>
@@ -142,16 +142,16 @@ export const GridTable = () => {
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
               <CardMedia
-                component='img'
-                height='140'
-                image='https://mui.com/static/images/cards/contemplative-reptile.jpg'
-                alt='green iguana'
+                component="img"
+                height="140"
+                image="https://mui.com/static/images/cards/contemplative-reptile.jpg"
+                alt="green iguana"
               />
               <CardContent>
-                <Typography gutterBottom variant='h5' component='div'>
+                <Typography gutterBottom variant="h5" component="div">
                   Lizard
                 </Typography>
-                <Typography variant='body2' color='text.secondary'>
+                <Typography variant="body2" color="text.secondary">
                   Lizards are a widespread group of squamate reptiles, with over
                   6,000 species, ranging across all continents except Antarctica
                 </Typography>
@@ -163,16 +163,16 @@ export const GridTable = () => {
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
               <CardMedia
-                component='img'
-                height='140'
-                image='https://mui.com/static/images/cards/contemplative-reptile.jpg'
-                alt='green iguana'
+                component="img"
+                height="140"
+                image="https://mui.com/static/images/cards/contemplative-reptile.jpg"
+                alt="green iguana"
               />
               <CardContent>
-                <Typography gutterBottom variant='h5' component='div'>
+                <Typography gutterBottom variant="h5" component="div">
                   Lizard
                 </Typography>
-                <Typography variant='body2' color='text.secondary'>
+                <Typography variant="body2" color="text.secondary">
                   Lizards are a widespread group of squamate reptiles, with over
                   6,000 species, ranging across all continents except Antarctica
                 </Typography>
@@ -182,5 +182,5 @@ export const GridTable = () => {
         </Grid>
       </Grid>
     </>
-  );
-};
+  )
+}

@@ -1,14 +1,10 @@
 import { useState, useEffect, useMemo } from 'react'
 
-import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid'
-import { Button, css, makeStyles } from '@mui/material'
-import classNames from 'classnames'
+import { DataGrid, GridColDef } from '@mui/x-data-grid'
+import { Button } from '@mui/material'
 
-import {
-  Link as RouterLink,
-  LinkProps as RouterLinkProps,
-} from 'react-router-dom'
-import { LinkProps } from '@mui/material/Link'
+import { BrowserRouter as Router, Link as RouterLink } from 'react-router-dom'
+import { Route } from 'react-router'
 
 const columns: GridColDef[] = [
   { field: 'id', headerName: 'ID', width: 220 },
@@ -17,16 +13,6 @@ const columns: GridColDef[] = [
 ]
 
 export const DetailsTable = () => {
-  const mapRows = () => {
-    const mapedRows = posts.map((el: any) => ({
-      userId: el.userId,
-      id: el.id,
-      title: el.title,
-      body: el.body,
-    }))
-    console.log('first')
-    console.log(mapedRows)
-  }
   const [posts, setPosts] = useState<any>([])
 
   const getPostsTitles = () => {
@@ -37,35 +23,41 @@ export const DetailsTable = () => {
 
   useEffect(() => {
     getPostsTitles()
-    mapRows()
     console.log(posts)
   }, [])
 
   return (
-    <>
-      <div style={{ height: 450, width: '1200', fontSize: '40px' }}>
-        <DataGrid
-          rows={posts}
-          columns={columns}
-          pageSize={5}
-          rowsPerPageOptions={[5]}
-          checkboxSelection
-          style={{ fontSize: '10px', width: '100%' }}
-        />
-        <Button
-          fullWidth
-          variant="contained"
-          color="success"
-          size="large"
-          component={Link}
-          to={`/${page}`}
-        >
-          CLIK FOR MORE INFO
-        </Button>
-      </div>
-      {useMemo(() => {
-        console.log('123')
-      }, [])}
-    </>
+    <Router>
+      <>
+        <div style={{ height: 450, width: '1200', fontSize: '40px' }}>
+          <DataGrid
+            rows={posts}
+            columns={columns}
+            pageSize={5}
+            rowsPerPageOptions={[5]}
+            checkboxSelection
+            style={{ fontSize: '10px', width: '100%' }}
+          />
+
+          <Button
+            fullWidth
+            variant="contained"
+            color="success"
+            size="large"
+            component={RouterLink}
+            to="/detailedinformation"
+          >
+            CLIK FOR MORE INFO
+          </Button>
+        </div>
+        {useMemo(() => {
+          console.log('123')
+        }, [])}
+        <Route path="/">
+          <div>Here's Home</div>
+        </Route>
+        <Route path="/detailedinformation">info info read it maaaan</Route>
+      </>
+    </Router>
   )
 }

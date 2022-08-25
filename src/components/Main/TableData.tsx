@@ -39,17 +39,6 @@ const rows = [
 ]
 
 export const TableData = () => {
-  const mapRows = () => {
-    const mapedRows = posts.map((el: any) => ({
-      userId: el.userId,
-      id: el.id,
-      title: el.title,
-      body: el.body,
-    }))
-    console.log('first')
-    console.log(rows)
-    console.log(mapedRows)
-  }
   const [posts, setPosts] = useState<any>([])
 
   const getPostsTitles = () => {
@@ -60,8 +49,6 @@ export const TableData = () => {
 
   useEffect(() => {
     getPostsTitles()
-    mapRows()
-    console.log(posts)
   }, [])
 
   return (
