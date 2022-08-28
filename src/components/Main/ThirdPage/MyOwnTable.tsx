@@ -43,20 +43,39 @@ const rows = [
 
 export const MyOwnTable = () => {
   const [open, setOpen] = React.useState(false);
+  const [modal, setModal] = React.useState({
+    name: "",
+    surname: "",
+    age: null,
+    weight: null,
+  });
+
+  const handleOpen = (row: any) => {
+    setOpen(true);
+    setModal({
+      name: row.name,
+      surname: row.surname,
+      age: row.age,
+      weight: row.weight,
+    });
+    console.log(modal);
+  };
+  const handleClose = () => setOpen(false);
+
   // const handleEvent = (e: any) => {
   //   console.log(rows);
   //   console.log(e.currentTarget.parentNode);
   // };
 
   const handleEvent = (row: any) => {
-    handleOpen();
+    // this.setState({ ...this.state.jasper, name: 'someothername' });
+    handleOpen(row);
+
     console.log(
       `Name is: ${row.name}, Surname: ${row.surname} Age: ${row.age}, Weight: ${row.weight}`
     );
   };
 
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
   return (
     <>
       <TableContainer component={Paper}>
@@ -92,10 +111,10 @@ export const MyOwnTable = () => {
       >
         <Box sx={style}>
           <Typography id='modal-modal-title' variant='h6' component='h2'>
-            Text in a modal
-          </Typography>
-          <Typography id='modal-modal-description' sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+            <Typography>IMIE:{modal.name}</Typography>
+            <Typography>Nazwisko: {modal.surname}</Typography>
+            <Typography>Wiek: {modal.age}</Typography>
+            <Typography>Waga: {modal.weight}</Typography>
           </Typography>
         </Box>
       </Modal>
