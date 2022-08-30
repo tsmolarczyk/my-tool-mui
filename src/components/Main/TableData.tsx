@@ -22,6 +22,7 @@ const columns: GridColDef[] = [
     valueGetter: (params: GridValueGetterParams) =>
       `${params.row.firstName || ''} ${params.row.lastName || ''}`,
   },
+  { field: 'modal', headerName: 'Modal', width: 220 },
 ]
 
 export const TableData = () => {
